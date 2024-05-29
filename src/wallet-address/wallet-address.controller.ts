@@ -15,6 +15,7 @@ export class WalletAddressController {
   @Get(':id')
   findOne(@Param('id') id: number): Promise<WalletAddress> {
     return this.walletAddressService.findOne(id);
+    
   }
 
   @Post()
